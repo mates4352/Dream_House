@@ -1,0 +1,54 @@
+.room {
+	padding: 64px 0;
+}
+
+
+.room__title {
+	max-width: 535px;
+	margin: 0 auto 40px auto;
+	text-align: center;
+}
+
+.title {
+	@include font(48px,1.2,600);
+}
+
+.room__wrapper {
+	display: grid;
+	grid-template-columns: repeat(3,340px);
+	gap: 45px;
+}
+
+.roow__column {
+	position: relative;
+	cursor: pointer;
+}
+.roow__column:hover .room__icon{
+	fill-opacity: 1;
+}
+.roow__column:hover .room__bg{
+	opacity: 0.4;
+}
+
+.room__bg{
+	@include size(100%);
+	position:absolute;
+	top:0;
+	left:0;
+	background-color: #000;
+	opacity: 0;
+	transition: opacity 500ms ease;
+}
+
+.room__icon {
+	@include size(30px);
+	@include center(xy);
+	z-index: 1;
+	fill-opacity:0;
+	fill: #fff;
+	transition: fill-opacity 500ms ease;
+}
+
+.room__icon:hover{
+	fill: $colorMain;
+}
