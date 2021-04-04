@@ -1,0 +1,87 @@
+%pos-rel {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+%pos-abs {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+$xll:1400px;
+$xl:1200px;
+$lg:992px;
+$md:768px;
+$sm:576px;
+$xs:320px;
+//----max container----//
+%container{
+	max-width:1440px;
+	padding:0 20px;
+	margin: 0 auto;
+	border: 1px solid #000;
+	//xll
+	@media screen and (max-width:$xll - 0.2px) {
+		max-width:$xl;
+		padding:0 20px;
+	}
+	//xl
+	@media screen and (max-width:$xl - 0.2px) {
+		max-width:$lg;
+		padding:0 20px;
+	}
+	//lg
+	@media screen and (max-width:$lg - 0.2px) {
+		max-width:$md;
+		padding:0 20px;
+	}
+	//md
+	@media screen and (max-width:$md - 0.2px) {
+		max-width:$sm;
+		padding:0 20px;
+	}
+	//sm
+	@media screen and (max-width:$sm - 0.2px) {
+		max-width:$xs;
+		padding:0 20px;
+	}
+}
+//----min container----//
+// %container{
+// 	max-width:1440px;
+// 	padding:0 20px;
+// 	margin: 0 auto;
+// 	border: 1px solid #000;
+// 	//xs
+// 	@media screen and (min-width:$xs) {
+// 		max-width:$xs;
+// 		padding:0 20px;
+// 	}
+// 	//sm
+// 	@media screen and (min-width:$sm) {
+// 		max-width:$sm;
+// 		padding:0 20px;
+// 	}
+// 	//md
+// 	@media screen and (min-width:$md) {
+// 		max-width:$md;
+// 		padding:0 20px;
+// 	}
+// 	//lg
+// 	@media screen and (min-width:$lg) {
+// 		max-width:$lg;
+// 		padding:0 20px;
+// 	}
+// 	//xl
+// 	@media screen and (min-width:$xl) {
+// 		max-width:$xl;
+// 		padding:0 20px;
+// 	}
+// 	//xll
+// 	@media screen and (min-width:$xll) {
+// 		max-width:$xll;
+// 		padding:0 20px;
+// 	}
+// }

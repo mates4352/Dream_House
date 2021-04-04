@@ -1,0 +1,38 @@
+/*-variable-*/
+@import "abstracts/variable/variable";
+
+/*-mixins-*/
+@import "abstracts/mixins/mixins";
+
+/*-elements-*/
+@import "abstracts/elements/elements";
+
+/*-base-*/
+
+@import "base/fonts";
+@import "base/nullstyle";
+
+/*-components-*/
+@import "components/_burger.scss";
+
+
+/*-Header-*/
+@import "layout/header";
+
+/*-Content-*/
+@import "layout/home";
+
+
+/*-footer-*/
+@import "layout/footer";
+
+
+
+
+
+
+
+
+
+
+

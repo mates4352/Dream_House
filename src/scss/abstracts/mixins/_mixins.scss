@@ -1,0 +1,89 @@
+@mixin size($w,$h:$w) {
+	width: $w;
+	height: $h;
+}
+
+//-----------mixins flex-----------//
+
+@mixin flex-a-j($alignItems,$justifyContent){
+	display: flex;
+	align-items: $alignItems;
+	justify-content: $justifyContent;
+}
+
+@mixin flex-a-j-d($alignItems,$justifyContent,$direction){
+	display: flex;
+	align-items: $alignItems;
+	justify-content: $justifyContent;
+	flex-direction:$direction;
+}
+
+//---------------------------------//
+
+@mixin center($position) {
+	position: absolute;
+	
+	@if $position == 'y' {
+	  top: 50%;
+	  -webkit-transform: translateY(-50%);
+	  -ms-transform: translateY(-50%);
+	  transform: translateY(-50%);
+	}
+	@else if $position == 'x' {
+	  left: 50%;
+	  -webkit-transform: translateX(-50%);
+	  -ms-transform: translateX(-50%);
+	  transform: translate(-50%);
+	}
+	@else if $position == 'xy' {
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+ }
+ 
+//--------------text----------------//
+
+@mixin blurText($value,$color) {
+	color: transparent;
+	text-shadow: 0 0 $value $color;
+}
+
+@mixin font($size:false,$lh:false,$weight:false,$text-align:false) {
+	@if $size { font-size: $size; }
+	@if $lh { line-height: $lh; }
+	@if $weight { font-weight: $weight, }
+	@if $text-align {text-align: $text-align;}
+ }
+
+//----------------media------------------//
+
+@mixin media($minmax, $media) {
+	@each $size, $resolution in $Breakpoints{
+		@if $media == $size {
+			@media only screen and (#{$minmax}-width: $resolution) {
+				@content;
+			}
+		}
+		@else{
+			@media only screen and (#{$minmax}-width: $media) {
+				@content;
+			}
+		}
+	}
+}
+
+@mixin font-face($font_name, $file_name, $weight, $style) {
+	@font-face {
+	font-family: $font_name;
+	font-display: swap;
+	src:url("../../assets/fonts/#{$file_name}.woff") format("woff"), 
+		url("../../assets/fonts/#{$file_name}.woff2") format("woff2");
+	font-weight: #{$weight};
+	font-style: #{$style};
+	}
+}
+
+

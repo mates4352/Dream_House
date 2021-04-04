@@ -1,0 +1,43 @@
+.burger{
+	display: none;
+	@include size(30px,20px);
+	position: fixed;
+	top: 25px;
+	left: 10px;
+	cursor: pointer;
+	z-index: 9999;
+	@include media(max,lg){
+		display: block;
+	}
+}
+
+.burger span,
+.burger::after,
+.burger::before{
+	content:'';
+	@include size(100%,2px);
+
+	position:absolute;
+	top:0;
+	left:0;
+
+	background-color: tomato;
+	transition: transform 500ms ease;
+
+}
+.burger span{
+	top:50%;
+}
+.burger.active span{
+	transform: rotate(360deg) scale(0);
+}
+.burger::after{
+	top: 100%;
+	bottom: 0;
+}
+.burger.active::after{
+	transform: translateY(-10px) rotate(45deg);
+}
+.burger.active::before{
+	transform: translateY(10px) rotate(-45deg);
+}
