@@ -1,0 +1,13 @@
+.logo{
+	fill: $colorMain;
+	transition: fill 500ms ease;
+
+	@include media(max,$sm){
+		@include size(100px);
+	}
+}
+
+.logo:hover{
+	fill: #da06a5;
+	cursor: pointer;
+}

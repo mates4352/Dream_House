@@ -1,47 +1,31 @@
 .header {
 	height: 96px;
-	@include media(max,sm){
+	@include media(max,$lg){
 		height: 200px;
 	}
-}
-
-.container {
-	@extend %container;
 }
 
 .header__row {
 	height: 100%;
 	@include flex-a-j(center,space-between);
 
-	@include media(max,sm){
+	@include media(max,$lg){
 		@include flex-a-j-d(center,center,column);
 	}
 }
 
 .header__logo{
 	margin-right: 92px;
-	@include media(max,lg){
+	@include media(max,$lg){
 		margin: 0 10px 0 0;
 	}
 	
-	@include media(max,sm){
+	@include media(max,$lg){
 		margin: 10px 0;
 	}
 }
 
-.logo{
-	fill: $colorMain;
-	transition: fill 500ms ease;
 
-	@include media(max,sm){
-		@include size(100px);
-	}
-}
-
-.logo:hover{
-	fill: #da06a5;
-	cursor: pointer;
-}
 
 .header__wrapper {
 	display: flex;
@@ -49,7 +33,7 @@
 }
 
 .header__menu{
-	@include media(max,lg){
+	@include media(max,$lg){
 		visibility: hidden;
 		opacity: 0;
 		@include size(100%);
@@ -73,7 +57,7 @@
 
 .header__list {
 	display: flex;
-	@include media(max,lg){
+	@include media(max,$lg){
 		@include flex-a-j-d(center,center,column);
 		height: 100%;
 	}
@@ -81,7 +65,7 @@
 
 .header__item:not(:last-of-type) {
 	margin: 0px 48px 0px 0;
-	@include media(max,lg){
+	@include media(max,$lg){
 		margin: 0px 0 40px 0;
 	}
 }
@@ -97,7 +81,7 @@
 	transition: color 500ms ease;
 	cursor: pointer;
 
-	@include media(max,lg){
+	@include media(max,$lg){
 		font-size: 40px;
 	}
 }
@@ -141,24 +125,6 @@
 
 .header__Search:hover{
 	fill: $colorMain;
-}
-
-.btn {
-	@include size(100px,50px);
-	
-	@include font(14px,1.2,600,center);
-	color: #FFFFFF;
-	position: relative;
-
-	background-color: $colorMain;
-	border-radius: 4px;
-	transition: background-color 500ms ease,color 500ms ease, border 500ms ease;
-}
-
-.btn:hover{
-	border: 1px solid $secondary;
-	color: $secondary;
-	background-color: transparent;
 }
 
 .header__btn {

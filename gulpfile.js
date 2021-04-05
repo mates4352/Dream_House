@@ -116,21 +116,22 @@ function css() {
 			overrideBrowserslist: ['last 4 version'],
 			cascade: true
 		}))
-		.pipe(cleanСss({
-			format: 'beautify',
-			level: { specialComments: true }
-		}))
 		.pipe(webpcss())
-		.pipe(dest(path.build.css))
+		.pipe(media())
 		.pipe(cleanСss({
-			level: { 2: { specialComments: 0 } }
+			format : 'beautify',
+			level: { specialComments: true },
 		}))
+		.pipe(dest(path.build.css))
 		.pipe(rename({
 			suffix: ".min",
 			extname: ".css"
 		}))
 		.pipe(shorthand())
 		.pipe(media())
+		.pipe(cleanСss({
+			level: { 2: { specialComments: 0 } },
+		}))
 		.pipe(dest(path.build.css))
 		.pipe(browsersync.stream())
 }
@@ -227,7 +228,7 @@ function clean() {
 
 function watchFiles() {
 	gulp.watch([path.watch.html], html,)
-	gulp.watch([path.watch.style], styleWatch)
+	gulp.watch([path.watch.style], css)
 	gulp.watch([path.watch.js], js)
 	gulp.watch([path.watch.images], images)
 }

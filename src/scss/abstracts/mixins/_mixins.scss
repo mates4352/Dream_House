@@ -61,17 +61,8 @@
 //----------------media------------------//
 
 @mixin media($minmax, $media) {
-	@each $size, $resolution in $Breakpoints{
-		@if $media == $size {
-			@media only screen and (#{$minmax}-width: $resolution) {
-				@content;
-			}
-		}
-		@else{
-			@media only screen and (#{$minmax}-width: $media) {
-				@content;
-			}
-		}
+	@media only screen and (#{$minmax}-width: $media) {
+		@content;
 	}
 }
 

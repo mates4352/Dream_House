@@ -1,0 +1,17 @@
+.btn {
+	@include size(100px,50px);
+	
+	@include font(14px,1.2,600,center);
+	color: #FFFFFF;
+	position: relative;
+
+	background-color: $colorMain;
+	border-radius: 4px;
+	transition: background-color 500ms ease,color 500ms ease, border 500ms ease;
+}
+
+	.btn:hover{
+		border: 1px solid $secondary;
+		color: $secondary;
+		background-color: transparent;
+	}

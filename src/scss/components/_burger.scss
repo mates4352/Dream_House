@@ -6,7 +6,7 @@
 	left: 10px;
 	cursor: pointer;
 	z-index: 9999;
-	@include media(max,lg){
+	@include media(max,$lg){
 		display: block;
 	}
 }
