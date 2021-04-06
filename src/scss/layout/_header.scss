@@ -25,8 +25,6 @@
 	}
 }
 
-
-
 .header__wrapper {
 	display: flex;
 	align-items: center;
@@ -85,32 +83,32 @@
 		font-size: 40px;
 	}
 }
+	.header__link:hover{
+		color: $colorMain;
+	}
 
+	.header__link::after,
+	.header__link::before{
+		content:'';
+		@include size(50%,2px);
+		position:absolute;
+		bottom:0;
+		left:0;
+		transform: translateX(250%);
+		background-color: $colorMain;
+		transition: transform  500ms ease;
+	}
 
-.header__link:hover{
-	color: $colorMain;
-}
+	.header__link:hover:before{
+		transform: translateX(100%);
+	}
 
-.header__link::after,
-.header__link::before{
-	content:'';
-	@include size(50%,2px);
-	position:absolute;
-	bottom:0;
-	left:0;
-	transform: translateX(250%);
-	background-color: $colorMain;
-	transition: transform  500ms ease;
-}
+	.header__link::after{
+		transform: translateX(-200%);
+	}
 
-.header__link:hover:before{
-	transform: translateX(100%);
-}
-.header__link::after{
-	transform: translateX(-200%);
-}
-.header__link:hover:after{
-	transform: translateX(0%);
+	.header__link:hover:after{
+		transform: translateX(0%);
 }
 
 .header__buttons {
@@ -122,10 +120,9 @@
 	fill: $secondary;
 	transition: fill 500ms ease;
 }
-
-.header__Search:hover{
-	fill: $colorMain;
-}
+	.header__Search:hover{
+		fill: $colorMain;
+	}
 
 .header__btn {
 	margin-right: 15px;
@@ -133,16 +130,15 @@
 	color: $secondary;
 	transition: color 500ms ease ,background-color 500ms ease ;
 }
-
-.header__btn:hover + .btn{
-	border: 1px solid $secondary;
-	color: $secondary;
-	background-color: transparent;
-}
-
-.header__btn:hover{
-	border: transparent;
-	color: #FFFFFF;
-	background-color: $colorMain;
-}
+	.header__btn:hover + .btn{
+		border: 1px solid $secondary;
+		color: $secondary;
+		background-color: transparent;
+	}
+	
+	.header__btn:hover{
+		border: transparent;
+		color: #FFFFFF;
+		background-color: $colorMain;
+	}
 

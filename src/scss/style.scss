@@ -14,7 +14,7 @@
 /*-Bem-*/
 @import "bem/_container.scss";
 @import "bem/_title.scss";
-
+@import "bem/_text.scss";
 
 /*-components-*/
 @import "components/_burger.scss";
@@ -27,7 +27,7 @@
 /*-Content-*/
 @import "layout/home";
 @import "layout/room";
-
+@import "layout/archmove";
 
 /*-footer-*/
 @import "layout/footer";

@@ -11,26 +11,44 @@
 .room__wrapper {
 	display: grid;
 	grid-template-columns: repeat(3,340px);
+	justify-content: center;
 	gap: 45px;
-	perspective: 2000px;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	transition: transform 1500ms ease;
+		@include media(max,$xl){
+			grid-template-columns: repeat(2,340px);
+		}
+		@include media(max,$md){
+			grid-template-columns: repeat(2,250px);
+			gap: 25px;
+		}
+		@include media(max,$sm){
+			grid-template-columns: repeat(1,340px);
+		}
 }
 
 .roow__column {
 	position: relative;
 	cursor: pointer;
 	overflow: hidden;
-	transform-style: preserve-3d;
 }
+	.roow__column:not(:first-child) {
+		@include media(max,$sm){
+			display: none;
+		}
+	}
+	.roow__column:hover .room__img{
+		transform: rotate(15deg) scale(1.3);
+	}
 
-.roow__column:hover .room__img{
-	transform: rotate(15deg) scale(1.3);
-}
-.roow__column:hover .room__icon{
-	fill-opacity: 1;
-}
-.roow__column:hover .room__bg{
-	opacity: 0.4;
-}
+	.roow__column:hover .room__icon{
+		fill-opacity: 1;
+	}
+
+	.roow__column:hover .room__bg{
+		opacity: 0.4;
+	}
 
 .room__img{
 	transition: transform 500ms ease;
@@ -54,7 +72,6 @@
 	fill: #fff;
 	transition: fill-opacity 500ms ease , fill 500ms ease;
 }
-
-.room__icon:hover{
-	fill: $colorMain;
-}
+	.room__icon:hover{
+		fill: $colorMain;
+	}

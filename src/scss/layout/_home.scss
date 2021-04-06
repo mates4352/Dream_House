@@ -12,14 +12,14 @@
 	max-width: 700px;
 	margin: 0 0 47px 0;
 	@include font(112px,1,600);
-
-	@include media(max,$lg){
-		text-align: center;
-		margin: 0 auto 30px auto;
-	}
-	@include media(max, $sm){
-		font-size: 60px;
-	}
+	
+		@include media(max,$lg){
+			text-align: center;
+			margin: 0 auto 30px auto;
+		}
+		@include media(max, $sm){
+			font-size: 60px;
+		}
 }
 
 .title__strong {
@@ -28,49 +28,41 @@
 
 .home__wrapper {
 	display: flex;
-
-	@include media(max,$lg){
-		flex-direction:column-reverse;
-	}
+		@include media(max,$lg){
+			flex-direction:column-reverse;
+		}
 }
 
 .home__column {
 	margin: 15px 15px 0 0;
 	flex: 0 1 30%;
-
-	@include media(max,$lg){
-		flex: 0 1 100%;
-	}
+		@include media(max,$lg){
+			flex: 0 1 100%;
+		}
 }
 
- img {
+.home__img {
 	@include size(100%);
 	margin: 0 0 15px 0;
 	object-fit: cover;
 	object-position: center;
 }
 
-.text {
-	margin: 0 0 48px 0;
-	@include font(16px,1.6);
-}
-
 .home__text{
+	margin: 0 0 48px 0;
 	max-width: 284px;
-
-	@include media(max,$lg){
-		max-width: 500px;
-		text-align: center;
-		margin: 0 auto 25px auto;
-	}
+		@include media(max,$lg){
+			max-width: 500px;
+			text-align: center;
+			margin: 0 auto 25px auto;
+		}
 }
 
 .home__btn {
 	@include size(180px,56px);
-
-	@include media(max,$lg){
-		display: block;
-		margin: 0 auto;
-	}
+		@include media(max,$lg){
+			display: block;
+			margin: 0 auto;
+		}
 }
 
