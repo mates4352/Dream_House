@@ -21,7 +21,6 @@ $xs:320px;
 	max-width:1440px;
 	padding:0 20px;
 	margin: 0 auto;
-	border: 1px solid #000;
 	//xll
 	@media screen and (max-width:$xll - 0.2px) {
 		max-width:$xl;
