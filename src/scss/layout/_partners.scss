@@ -1,6 +1,3 @@
-.containerTwo {
-}
-
 .partners__container{
 	padding: 64px 0 104px 0;
 }
@@ -13,6 +10,11 @@
 }
 
 .partners__wrapper {
+	display: flex;
+	align-items: flex-end;
+}
+
+.partners__wrapper {
 	@include flex-a-j(flex-end,space-between);
 		
 		@include media(max,$lg){
@@ -21,6 +23,6 @@
 		}
 }
 
-.partners__img:not(:last-child) {
+.partners__img {
 	margin-bottom: 25px;
 }

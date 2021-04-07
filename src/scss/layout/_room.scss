@@ -30,7 +30,13 @@
 	cursor: pointer;
 	overflow: hidden;
 }
-	.roow__column:not(:first-child) {
+	.roow__column:nth-child(1) .room__icon {
+		fill-opacity: 1;
+	}
+	.roow__column:nth-child(1) .room__bg{
+		opacity: 0.4;
+	}
+	.roow__column:not(:first-child){
 		@include media(max,$sm){
 			display: none;
 		}

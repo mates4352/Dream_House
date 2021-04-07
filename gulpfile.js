@@ -40,6 +40,7 @@ const path = {
 	build: {
 		html: "dist/",
 		js: "dist/js/",
+		library: "dist/library/",
 		css: "dist/css/",
 		images: "dist/assets/images",
 		fonts: "dist/assets/fonts",
@@ -47,6 +48,7 @@ const path = {
 	src: {
 		html: "src/*.html",
 		js: "src/js/*.js",
+		library: "src/library/**",
 		style: "src/" + preprocessor + "/style." + preprocessor + "",     // Мы в пути пишем название переменной которая хранит название в строчном типе. Если бы мы указали бы просто ссылку на функцию то была бы сдесь ошибка 
 		images: "src/assets/images/**/*.{jpg,png,svg,gif,ico,webp}",
 		fonts: "src/assets/fonts/*.{ttf,eot,svg,woff,woff2}",
@@ -54,6 +56,7 @@ const path = {
 	watch: {
 		html: "src/**/*.html",
 		js: "src/js/**/*.js",
+		library: "src/library/**",
 		style: "src/" + preprocessor + "/**/*." + preprocessor + "",
 		images: "src/assets/images/**/*.{jpg,png,svg,gif,ico,webp}",
 	},
@@ -168,6 +171,12 @@ function js() {
 		.pipe(browsersync.stream())
 }
 
+
+function library() {
+	return src(path.src.library)
+	.pipe(dest(path.build.library))
+}
+
 //----IMG----//
 
 function images() {
@@ -236,11 +245,12 @@ function watchFiles() {
 	gulp.watch([path.watch.html], html,)
 	gulp.watch([path.watch.style], css)
 	gulp.watch([path.watch.js], js)
+	gulp.watch([path.build.library], library)
 	gulp.watch([path.watch.images], images)
 }
 
 //Создаем переменную в которую будем включать все интсрукции которые мы сделали выше gulp.series - позволяет запустить таски по порядку gulp.parallel паралейно другим таскам // Документация => https://gulpjs.com/docs/en/api/concepts
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
+const build = gulp.series(clean, gulp.parallel(html, css, js, library, images, fonts));
 const watch = gulp.series(build, gulp.parallel(browserSync, watchFiles, fontsStyle));
 
 //----Экспорт таск----//
@@ -251,6 +261,7 @@ exports.fonts = fonts
 exports.html = html
 exports.css = css
 exports.js = js
+exports.library = library
 exports.images = images
 exports.clean = clean
 exports.build = build;

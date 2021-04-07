@@ -12,8 +12,12 @@
 
 .footer__list {
 	display: flex;
+		@include media(max,$md){
+			margin-bottom: 25px;
+		}
 		@include media(max,500px){
 			flex-direction:column;
+			margin-bottom: 0;
 		}
 }
 
