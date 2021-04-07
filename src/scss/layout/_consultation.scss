@@ -9,7 +9,10 @@
 	max-width: 535px;
 	margin-left: auto;
 	padding: 300px 0 275px 0;
-		@include media(max,md){
+		*:last-child{
+			margin-bottom:0 ;
+		}
+		@include media(max,$md){
 			padding: 150px 0 125px 0;
 		}
 }
