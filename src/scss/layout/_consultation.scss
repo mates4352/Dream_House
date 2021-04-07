@@ -1,0 +1,34 @@
+.consultation__container{
+	background:url(./../../assets/images/consultation/img.png) no-repeat left center/ 497px 684px;
+		@include media(max,$md){
+			background:url(./../../assets/images/consultation/img.png) no-repeat center center/ 497px 684px;
+		}
+}
+
+.consultation__wrapper {
+	max-width: 535px;
+	margin-left: auto;
+	padding: 300px 0 275px 0;
+		@include media(max,md){
+			padding: 150px 0 125px 0;
+		}
+}
+
+.consultation__title{
+	margin-bottom: 65px;
+		@include media(max,$md){
+			text-align: center;
+		}
+	}
+
+.consultation__strong{
+	color: $colorMain
+}
+
+.consultation__btn{
+	@include size(205px,56px);
+		@include media(max,$md){
+			display: block;
+			margin: 0 auto;
+		}	
+}
