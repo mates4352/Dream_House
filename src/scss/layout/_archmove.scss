@@ -40,9 +40,9 @@
 			margin-top: 15px;
 			flex-basis: 100%;
 			align-items: center;
-				@include media(max,$sm){
-					margin-top: 0;
-				}
+		}
+		@include media(max,$sm){
+			margin-top: 0;
 		}
 }
 
@@ -92,9 +92,6 @@
 .archmove__caption-title{
 	@include font(16px,1.6,600);
 	padding-bottom: 8px;
-}
-
-.archmove__text {
 }
 
 .archmove__btn{

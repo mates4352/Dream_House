@@ -157,8 +157,7 @@ sup {
 .title {
   font-size: 48px;
   line-height: 1.2;
-  font-weight: 600;
-  text-align: center
+  font-weight: 600
 }
 .text {
   font-size: 16px;
@@ -233,15 +232,7 @@ sup {
   color: #FFFFFF;
   position: relative;
   background-color: #FD665E;
-  border-radius: 4px;
-  -webkit-transition: background-color 500ms ease,color 500ms ease,border 500ms ease;
-  -o-transition: background-color 500ms ease,color 500ms ease,border 500ms ease;
-  transition: background-color 500ms ease,color 500ms ease,border 500ms ease
-}
-.btn:hover {
-  border: 1px solid #585858;
-  color: #585858;
-  background-color: transparent
+  border-radius: 4px
 }
 /*-Header-*/
 .header {
@@ -358,20 +349,7 @@ sup {
 .header__btn {
   margin-right: 15px;
   background-color: transparent;
-  color: #585858;
-  -webkit-transition: color 500ms ease,background-color 500ms ease;
-  -o-transition: color 500ms ease,background-color 500ms ease;
-  transition: color 500ms ease,background-color 500ms ease
-}
-.header__btn:hover + .btn {
-  border: 1px solid #585858;
-  color: #585858;
-  background-color: transparent
-}
-.header__btn:hover {
-  border: transparent;
-  color: #FFFFFF;
-  background-color: #FD665E
+  color: #585858
 }
 /*-Content-*/
 .home {
@@ -434,16 +412,7 @@ sup {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 45px;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 1500ms ease;
-  transition: -webkit-transform 1500ms ease;
-  -o-transition: transform 1500ms ease;
-  transition: transform 1500ms ease;
-  transition: transform 1500ms ease,-webkit-transform 1500ms ease
+  gap: 45px
 }
 .roow__column {
   position: relative;
@@ -597,6 +566,43 @@ sup {
   width: 175px;
   height: 56px
 }
+.review {
+  padding: 64px 0
+}
+.review__title {
+  max-width: 375px;
+  margin-bottom: 40px
+}
+.review__article {
+  max-width: 855px;
+  margin-left: auto;
+  padding-left: 100px;
+  position: relative
+}
+.review__article::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='58' height='41' viewBox='0 0 58 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M24.5312 0.992188C12.0859 2.89062 0.765625 12.1719 0.765625 25.3906C0.765625 34.5312 6.03906 40.7188 13.6328 40.7188C21.6484 40.7188 26.3594 33.8984 26.3594 25.5312C19.6797 25.25 15.1094 21.1016 15.1094 15.1953C15.1094 9.35938 19.5391 5.49219 25.6562 4.22656L24.5312 0.992188ZM55.9609 0.992188C43.5156 2.89062 32.1953 12.1719 32.1953 25.3906C32.1953 34.5312 37.4688 40.7188 45.0625 40.7188C53.0781 40.7188 57.7891 33.8984 57.7891 25.5312C51.1094 25.25 46.4688 21.1016 46.4688 15.1953C46.4688 9.35938 50.8984 5.49219 57.0156 4.22656L55.9609 0.992188Z' fill='%23FD665E'/%3e%3c/svg%3e");
+  background-repeat: no-repeat
+}
+.review__text {
+  margin-bottom: 60px;
+  font-size: 32px;
+  line-height: 1.6;
+  font-weight: 300
+}
+.review__name {
+  font-size: 16px;
+  line-height: 1.6;
+  font-style: normal
+}
+.review__strong {
+  font-weight: 700
+}
 /*-footer-*/
 @supports (-webkit-appearance:none) {
   .archmove__caption:nth-child(1):before {
@@ -607,6 +613,39 @@ sup {
   }
   .archmove__caption:nth-child(3):before {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='40' height='53' viewBox='0 0 40 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M2 51V17.9097L19.5324 2.62508L38 17.9397V51H2Z' stroke='black' stroke-width='4'/%3e%3ccircle cx='20' cy='24' r='5' stroke='%23FD665E' stroke-width='4'/%3e%3c/svg%3e")
+  }
+  .review__article::before {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='58' height='41' viewBox='0 0 58 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M24.5312 0.992188C12.0859 2.89062 0.765625 12.1719 0.765625 25.3906C0.765625 34.5312 6.03906 40.7188 13.6328 40.7188C21.6484 40.7188 26.3594 33.8984 26.3594 25.5312C19.6797 25.25 15.1094 21.1016 15.1094 15.1953C15.1094 9.35938 19.5391 5.49219 25.6562 4.22656L24.5312 0.992188ZM55.9609 0.992188C43.5156 2.89062 32.1953 12.1719 32.1953 25.3906C32.1953 34.5312 37.4688 40.7188 45.0625 40.7188C53.0781 40.7188 57.7891 33.8984 57.7891 25.5312C51.1094 25.25 46.4688 21.1016 46.4688 15.1953C46.4688 9.35938 50.8984 5.49219 57.0156 4.22656L55.9609 0.992188Z' fill='%23FD665E'/%3e%3c/svg%3e")
+  }
+}
+@media only screen and (min-width: 992px) {
+  .btn {
+    -webkit-transition: background-color 500ms ease,color 500ms ease,border 500ms ease;
+    -o-transition: background-color 500ms ease,color 500ms ease,border 500ms ease;
+    transition: background-color 500ms ease,color 500ms ease,border 500ms ease
+  }
+  .btn:hover {
+    border: 1px solid #585858;
+    color: #585858;
+    background-color: transparent
+  }
+  .header__btn {
+    -webkit-transition: color 500ms ease,background-color 500ms ease;
+    -o-transition: color 500ms ease,background-color 500ms ease;
+    transition: color 500ms ease,background-color 500ms ease
+  }
+  .header__btn:hover + .btn {
+    border: 1px solid #585858;
+    color: #585858;
+    background-color: transparent
+  }
+  .header__btn:hover {
+    border: transparent;
+    color: white;
+    background-color: #FD665E
+  }
+  @supports (-webkit-appearance:none) {
+    
   }
 }
 @media screen and (max-width: 1399.8px) {
@@ -768,13 +807,20 @@ sup {
     -ms-flex-align: center;
     align-items: center
   }
-  @supports (-webkit-appearance:none) {
-    
+  .review__title {
+    margin: 0 auto 30px auto;
+    text-align: center
   }
-}
-@media only screen and (max-width: 768px) and (max-width: 576px) {
-  .archmove__column {
-    margin-top: 0
+  .review__article {
+    padding-left: 0px;
+    text-align: center
+  }
+  .review__article::before {
+    display: none
+  }
+  .review__text {
+    margin-bottom: 40px;
+    font-size: 26px
   }
   @supports (-webkit-appearance:none) {
     
@@ -802,6 +848,9 @@ sup {
   }
   .roow__column:not(:first-child) {
     display: none
+  }
+  .archmove__column {
+    margin-top: 0
   }
   .archmove__caption:last-of-type {
     margin-bottom: 40px

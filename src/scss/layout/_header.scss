@@ -128,17 +128,23 @@
 	margin-right: 15px;
 	background-color: transparent;
 	color: $secondary;
-	transition: color 500ms ease ,background-color 500ms ease ;
+		@include media(min,$lg){
+			transition: color 500ms ease ,background-color 500ms ease ;
+		}
 }
 	.header__btn:hover + .btn{
-		border: 1px solid $secondary;
-		color: $secondary;
-		background-color: transparent;
+		@include media(min,$lg){
+			border: 1px solid $secondary;
+			color: $secondary;
+			background-color: transparent;
+		}
 	}
 	
 	.header__btn:hover{
-		border: transparent;
-		color: #FFFFFF;
-		background-color: $colorMain;
+		@include media(min,$lg){
+			border: transparent;
+			color: hsl(0, 0%, 100%);
+			background-color: $colorMain;
+		}
 	}
 
