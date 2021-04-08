@@ -201,7 +201,7 @@
  }
 
 
- 
+
  .swiper-button-prev,
  .swiper-button-next {
 	width: 48px;
@@ -224,6 +224,9 @@
 	 bottom: 25px;
 	 right: 0;
 	 width: 115px;
+		@include media(max,$sm){
+			bottom: 50px;
+		}
  }
 
  

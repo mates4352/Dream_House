@@ -2084,6 +2084,9 @@ screen and (max-height: 300px) {
   }
 }
 @media only screen and (max-width: 576px) {
+  .swiper__buttons {
+    bottom: 50px
+  }
   .logo {
     width: 100px;
     height: 100px
