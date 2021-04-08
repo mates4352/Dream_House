@@ -1,5 +1,8 @@
 .review {
 	padding: 64px 0;
+	@include media(max,$lg){
+		padding: 32px 0;
+	}
 }
 
 .review__title {

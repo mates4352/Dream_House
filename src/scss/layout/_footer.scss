@@ -1,11 +1,23 @@
 .footer {
-	height: 210px;
+	min-height: 210px;
+	height: 1px;
+}
+
+.footer .containerTwo{
+	height: 100%;
+}
+
+.partners__container{
+	height: 100%;
 }
 
 .footer__wrapper {
 	height: 100%;
+	display: flex;
+	align-items: center;
 	@include flex-a-j(center,space-between);
 		@include media(max,$md){
+			justify-content: center;
 			flex-direction:column;
 		}
 }

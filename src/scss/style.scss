@@ -11,6 +11,9 @@
 @import "base/fonts";
 @import "base/nullstyle";
 
+/*-library-*/
+@import "library/magnific.scss";
+
 /*-Bem-*/
 @import "bem/_container.scss";
 @import "bem/_title.scss";
@@ -31,7 +34,6 @@
 @import "layout/review";
 @import "layout/consultation";
 @import "layout/partners";
-
 
 /*-footer-*/
 @import "layout/footer";
