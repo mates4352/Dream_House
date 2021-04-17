@@ -49,7 +49,7 @@
 }
 
 .home__text{
-	margin: 0 0 48px 0;
+	margin-bottom: 48px;
 	max-width: 284px;
 		@include media(max,$lg){
 			max-width: 500px;
