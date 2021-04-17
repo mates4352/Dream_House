@@ -26,6 +26,151 @@
       max-width: 320px;
       padding: 0 20px; } }
 
+/*-base-*/
+@font-face {
+  font-family: "Sfuid";
+  font-display: swap;
+  src: url("../../assets/fonts/Sfuid-Bold.woff") format("woff"), url("../../assets/fonts/Sfuid-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Sfuid";
+  font-display: swap;
+  src: url("../../assets/fonts/Sfuid-ExtraLargeBold.woff") format("woff"), url("../../assets/fonts/Sfuid-ExtraLargeBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Sfuid";
+  font-display: swap;
+  src: url("../../assets/fonts/Sfuid-Light.woff") format("woff"), url("../../assets/fonts/Sfuid-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Sfuid";
+  font-display: swap;
+  src: url("../../assets/fonts/Sfuid-Regular.woff") format("woff"), url("../../assets/fonts/Sfuid-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Sfuid";
+  font-display: swap;
+  src: url("../../assets/fonts/Sfuid-Semibold.woff") format("woff"), url("../../assets/fonts/Sfuid-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+cite,
+main,
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  min-width: 320px;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Sfuid";
+  font-weight: 400;
+  font-size: 10px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1;
+  color: #000;
+  overflow-x: hidden; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+progress {
+  vertical-align: baseline; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+code,
+kbd,
+samp {
+  font-size: 1em; }
+
+b,
+strong {
+  font-weight: bolder; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
 /*-library-*/
 .mfp-bg {
   top: 0;
@@ -863,151 +1008,6 @@ button.swiper-pagination-bullet {
   .swiper-container-flip .swiper-slide-shadow-bottom, .swiper-container-flip .swiper-slide-shadow-left, .swiper-container-flip .swiper-slide-shadow-right, .swiper-container-flip .swiper-slide-shadow-top {
     z-index: 0;
     backface-visibility: hidden; }
-
-/*-base-*/
-@font-face {
-  font-family: "Sfuid";
-  font-display: swap;
-  src: url("../../assets/fonts/Sfuid-Bold.woff") format("woff"), url("../../assets/fonts/Sfuid-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Sfuid";
-  font-display: swap;
-  src: url("../../assets/fonts/Sfuid-ExtraLargeBold.woff") format("woff"), url("../../assets/fonts/Sfuid-ExtraLargeBold.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Sfuid";
-  font-display: swap;
-  src: url("../../assets/fonts/Sfuid-Light.woff") format("woff"), url("../../assets/fonts/Sfuid-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Sfuid";
-  font-display: swap;
-  src: url("../../assets/fonts/Sfuid-Regular.woff") format("woff"), url("../../assets/fonts/Sfuid-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Sfuid";
-  font-display: swap;
-  src: url("../../assets/fonts/Sfuid-Semibold.woff") format("woff"), url("../../assets/fonts/Sfuid-Semibold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal; }
-
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box; }
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-cite,
-main,
-nav,
-footer,
-header,
-aside {
-  display: block; }
-
-html,
-body {
-  min-width: 320px;
-  height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Sfuid";
-  font-weight: 400;
-  font-size: 10px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  line-height: 1;
-  color: #000;
-  overflow-x: hidden; }
-
-input,
-button,
-textarea {
-  font-family: inherit; }
-
-input::-ms-clear {
-  display: none; }
-
-button {
-  cursor: pointer; }
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0; }
-
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0; }
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-progress {
-  vertical-align: baseline; }
-
-a,
-a:visited {
-  text-decoration: none; }
-
-a:hover {
-  text-decoration: none; }
-
-ul li {
-  list-style: none; }
-
-img {
-  vertical-align: top; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit; }
-
-code,
-kbd,
-samp {
-  font-size: 1em; }
-
-b,
-strong {
-  font-weight: bolder; }
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
 
 /*-Bem-*/
 .title {
