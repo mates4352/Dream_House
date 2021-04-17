@@ -1423,7 +1423,7 @@ button.swiper-pagination-bullet {
   object-position: center
 }
 .home__text {
-  margin: 0 0 48px 0;
+  margin-bottom: 48px;
   max-width: 284px
 }
 .home__btn {
