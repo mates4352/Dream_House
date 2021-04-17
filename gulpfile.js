@@ -77,7 +77,7 @@ const server = () => {
 }
 
 //----HTML----//
-export const html = () => {
+const html = () => {
 	return src(path.src.html)
 		.pipe(plumber())
 		.pipe(include())
@@ -94,6 +94,8 @@ export const html = () => {
 		.pipe(dest(path.build.html))
 		.pipe(browsersync.stream())
 }
+
+exports.html = html
 
 //----CSS----//
 const css = () => {
@@ -240,13 +242,13 @@ exports.clean = clean
 //----Watch----//
 function watchFiles() {
 	gulp.watch([path.watch.html], html,)
-	gulp.watch([path.watch.style], styleWatch)
+	gulp.watch([path.watch.style], css)
 	gulp.watch([path.watch.js], js)
 	gulp.watch([path.build.library], library)
 	gulp.watch([path.watch.images], images)
 }
 
-const build = gulp.series(clean, gulp.parallel(html, styleWatch, js, library, images, fonts));
+const build = gulp.series(clean, gulp.parallel(html, css, js, library, images, fonts));
 const watch = gulp.series(build, gulp.parallel(server, watchFiles, fontsStyle));
 
 exports.build = build;

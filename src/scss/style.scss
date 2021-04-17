@@ -7,13 +7,13 @@
 /*-elements-*/
 @import "abstracts/elements/elements";
 
-/*-library-*/
-@import "library/magnific.scss";
-@import "library/swiper-bundle.min.scss";
-
 /*-base-*/
 @import "base/fonts";
 @import "base/nullstyle";
+
+/*-library-*/
+@import "library/magnific.scss";
+@import "library/swiper-bundle.min.scss";
 
 /*-Bem-*/
 @import "bem/_container.scss";
