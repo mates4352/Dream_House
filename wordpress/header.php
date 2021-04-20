@@ -25,29 +25,17 @@
 				<use xlink:href=" <?php echo IMAGES_DIR;?>/svg/sprite.svg#logo"></use>
 			</svg>
 		</a>
-
-			<nav class="header__menu">
-				<ul class="header__list">
-					<li class="header__item">
-						<a class="header__link" href="#" >Design Gallery</a>
-					</li>
-
-					<li class="header__item">
-						<a class="header__link" href="#" >List of Architect</a>
-					</li>
-
-					<li class="header__item">
-						<a class="header__link" href="#" >Articles</a>
-					</li>
-
-					<li class="header__item">
-						<a class="header__link" href="#" >How it Works</a>
-					</li>
-
-				</ul>
-			</nav>
-		</div>
-
+		<?php wp_nav_menu(
+				[
+					'theme_location'  => 'header_menu',
+					'menu'            => false, 
+					'container'       => "nav", 
+					'container_class' => 'header__nav',
+					'menu_class'      => 'header__list', 
+					'menu_id'         => false,
+					'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
+				]
+			 ); ?>
 		<div class="header__buttons">
 			<svg class="header__Search" width="18" height="18" viewBox="0 0 18 18">
 				<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
