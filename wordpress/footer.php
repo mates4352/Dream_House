@@ -25,9 +25,12 @@
 				</li>
 			</ul>
 
-			<svg class="footer__logo logo" width="62" height="28" viewBox="0 0 62 28">
-				<use xlink:href="assets/images/svg/sprite.svg#logo"></use>
+		<a href="<?php home_url();?>">
+			<svg class="header__logo logo" width="62" height="28" viewBox="0 0 62 28">
+				<use xlink:href=" <?php echo IMAGES_DIR;?>/svg/sprite.svg#logo"></use>
 			</svg>
+		</a>
+
 		</div> <!-- footer__row -->
 
 	</div> <!-- container -->

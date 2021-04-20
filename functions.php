@@ -16,3 +16,6 @@ function script(){
 	wp_enqueue_script('swiper-bundle', get_template_directory_uri() . '/dist/library/swiper-bundle.min.js',array(jquery),'null',true);
 	wp_enqueue_script('swiper', get_template_directory_uri() . '/dist/library/swiper.js',array(jquery),'null',true);
 }
+
+define('THEME_ROOT' get_template_directory_uri());
+define('IMAGES_DIR', THEME_ROOT . '../dist/assets/images');

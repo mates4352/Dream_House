@@ -1,7 +1,7 @@
 .consultation__container{
-	background:url(../assets/images/consultation/img.png) no-repeat left center/ 497px 684px;
+	background:url(../ <?php echo IMAGES_DIR;?>consultation/img.png) no-repeat left center/ 497px 684px;
 		@include media(max,$md){
-			background:url(../assets/images/consultation/img.png) no-repeat center center/ 497px 684px;
+			background:url(../ <?php echo IMAGES_DIR;?>consultation/img.png) no-repeat center center/ 497px 684px;
 		}
 }
 

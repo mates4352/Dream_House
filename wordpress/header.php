@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?> ../dist/assets/fonts/fonts.css"></link>
 	<?php wp_head();?>
-	<title>Document</title>
+	<title><?php echo bloginfo(description);?></title>
 </head>
 
 <body>
@@ -20,9 +20,11 @@
 				<span></span>
 			</div>
 			
+		<a href="<?php bloginfo('url');?>">
 			<svg class="header__logo logo" width="62" height="28" viewBox="0 0 62 28">
-				<use xlink:href="assets/images/svg/sprite.svg#logo"></use>
+				<use xlink:href=" <?php echo IMAGES_DIR;?>/svg/sprite.svg#logo"></use>
 			</svg>
+		</a>
 
 			<nav class="header__menu">
 				<ul class="header__list">
@@ -48,7 +50,7 @@
 
 		<div class="header__buttons">
 			<svg class="header__Search" width="18" height="18" viewBox="0 0 18 18">
-				<use xlink:href="assets/images/svg/sprite.svg#Search"></use>
+				<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
 			</svg>
 			<button class="header__btn btn">Sign In</button>
 			<button class="btn">Sign Up</button>

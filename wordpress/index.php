@@ -10,7 +10,7 @@
 				<button class="home__btn btn">Free Consultation</button>
 			</div>
 
-				<picture><source srcset="assets/images/home/img.webp" type="image/webp"><img class="home__img" src="assets/images/home/img.jpg" alt="home"></picture>
+				<picture><source srcset=" <?php echo IMAGES_DIR;?>home/img.webp" type="image/webp"><img class="home__img" src=" <?php echo IMAGES_DIR;?>home/img.jpg" alt="home"></picture>
 
 		</div>
 	</div>
@@ -21,50 +21,50 @@
 
 		<div  class="room__wrapper">
 
-			<a class="roow__column" data-fslightbox="gal" href="assets/images/room/img1.jpg">
-				<picture><source srcset="assets/images/room/img1.webp" type="image/webp"><img class="room__img" src="assets/images/room/img1.jpg" alt=""></picture>
+			<a class="roow__column" data-fslightbox="gal" href=" <?php echo IMAGES_DIR;?>room/img1.jpg">
+				<picture><source srcset=" <?php echo IMAGES_DIR;?>room/img1.webp" type="image/webp"><img class="room__img" src=" <?php echo IMAGES_DIR;?>room/img1.jpg" alt=""></picture>
 				<svg class="room__icon" viewBox="0 0 15 15">
-					<use xlink:href="assets/images/svg/sprite.svg#Search"></use>
+					<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
 				</svg>
 				<div class="room__bg"></div>
 			</a>
 
-			<a class="roow__column" data-fslightbox="gal" href="assets/images/room/img3.jpg">
-				<picture><source srcset="assets/images/room/img3.webp" type="image/webp"><img class="room__img" src="assets/images/room/img3.jpg" alt=""></picture>
+			<a class="roow__column" data-fslightbox="gal" href=" <?php echo IMAGES_DIR;?>room/img3.jpg">
+				<picture><source srcset=" <?php echo IMAGES_DIR;?>room/img3.webp" type="image/webp"><img class="room__img" src=" <?php echo IMAGES_DIR;?>room/img3.jpg" alt=""></picture>
 				<svg class="room__icon" viewBox="0 0 15 15">
-					<use xlink:href="assets/images/svg/sprite.svg#Search"></use>
+					<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
 				</svg>
 				<div class="room__bg"></div>
 			</a>
 
-			<a class="roow__column" data-fslightbox="gal" href="assets/images/room/img5.jpg">
-				<picture><source srcset="assets/images/room/img5.webp" type="image/webp"><img class="room__img" src="assets/images/room/img5.jpg" alt=""></picture>
+			<a class="roow__column" data-fslightbox="gal" href=" <?php echo IMAGES_DIR;?>room/img5.jpg">
+				<picture><source srcset=" <?php echo IMAGES_DIR;?>room/img5.webp" type="image/webp"><img class="room__img" src=" <?php echo IMAGES_DIR;?>room/img5.jpg" alt=""></picture>
 				<svg class="room__icon" viewBox="0 0 15 15">
-					<use xlink:href="assets/images/svg/sprite.svg#Search"></use>
+					<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
 				</svg>
 				<div class="room__bg"></div>
 			</a>
 
-			<a class="roow__column" data-fslightbox="gal" href="assets/images/room/img6.jpg">
-				<picture><source srcset="assets/images/room/img6.webp" type="image/webp"><img class="room__img" src="assets/images/room/img6.jpg" alt=""></picture>
+			<a class="roow__column" data-fslightbox="gal" href=" <?php echo IMAGES_DIR;?>room/img6.jpg">
+				<picture><source srcset=" <?php echo IMAGES_DIR;?>room/img6.webp" type="image/webp"><img class="room__img" src=" <?php echo IMAGES_DIR;?>room/img6.jpg" alt=""></picture>
 				<svg class="room__icon" viewBox="0 0 15 15">
-					<use xlink:href="assets/images/svg/sprite.svg#Search"></use>
+					<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
 				</svg>
 				<div class="room__bg"></div>
 			</a>
 
-			<a class="roow__column" data-fslightbox="gal" href="assets/images/room/img1.jpg">
-				<picture><source srcset="assets/images/room/img1.webp" type="image/webp"><img class="room__img" src="assets/images/room/img1.jpg" alt=""></picture>
+			<a class="roow__column" data-fslightbox="gal" href=" <?php echo IMAGES_DIR;?>room/img1.jpg">
+				<picture><source srcset=" <?php echo IMAGES_DIR;?>room/img1.webp" type="image/webp"><img class="room__img" src=" <?php echo IMAGES_DIR;?>room/img1.jpg" alt=""></picture>
 				<svg class="room__icon" viewBox="0 0 15 15">
-					<use xlink:href="assets/images/svg/sprite.svg#Search"></use>
+					<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
 				</svg>
 				<div class="room__bg"></div>
 			</a>
 
-			<a class="roow__column" data-fslightbox="gal" href="assets/images/room/img3.jpg">
-				<picture><source srcset="assets/images/room/img3.webp" type="image/webp"><img class="room__img" src="assets/images/room/img3.jpg" alt=""></picture>
+			<a class="roow__column" data-fslightbox="gal" href=" <?php echo IMAGES_DIR;?>room/img3.jpg">
+				<picture><source srcset=" <?php echo IMAGES_DIR;?>room/img3.webp" type="image/webp"><img class="room__img" src=" <?php echo IMAGES_DIR;?>room/img3.jpg" alt=""></picture>
 				<svg class="room__icon" viewBox="0 0 15 15">
-					<use xlink:href="assets/images/svg/sprite.svg#Search"></use>
+					<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
 				</svg>
 				<div class="room__bg"></div>
 			</a>
@@ -78,7 +78,7 @@
 
 		<div class="archmove__wrapper">
 
-			<picture><source srcset="assets/images/archmove/img.webp" type="image/webp"><img class="archmove__img" src="assets/images/archmove/img.jpg" alt="tovar"></picture>
+			<picture><source srcset=" <?php echo IMAGES_DIR;?>archmove/img.webp" type="image/webp"><img class="archmove__img" src=" <?php echo IMAGES_DIR;?>archmove/img.jpg" alt="tovar"></picture>
 
 			<div class="archmove__column">
 
@@ -151,13 +151,13 @@
 			<div class="swiper__buttons">
 				<div class="swiper-button-prev">
 					<svg width="20" height="20" viewBox="0 0 20 20">
-						<use xlink:href="./assets/images/review/arrow.svg#arrow"></use>
+						<use xlink:href="./ <?php echo IMAGES_DIR;?>review/arrow.svg#arrow"></use>
 					</svg>
 				</div>
 				
 				<div class="swiper-button-next">
 					<svg width="20" height="20" viewBox="0 0 20 20">
-						<use xlink:href="./assets/images/review/arrow.svg#arrow"></use>
+						<use xlink:href="./ <?php echo IMAGES_DIR;?>review/arrow.svg#arrow"></use>
 					</svg >
 				</div>
 			</div>
@@ -180,11 +180,11 @@
 	<div class="partners__container containerTwo">
 		<h2 class="partners__title title">Our Partners</h2>
 		<div class="partners__wrapper">
-			<picture><source srcset="assets/images/partners/icon1.svg" type="image/webp"><img class="partners__img" src="assets/images/partners/icon1.svg" alt="" ></picture>
-			<picture><source srcset="assets/images/partners/icon2.svg" type="image/webp"><img class="partners__img" src="assets/images/partners/icon2.svg" alt="" ></picture>
-			<picture><source srcset="assets/images/partners/icon3.svg" type="image/webp"><img class="partners__img" src="assets/images/partners/icon3.svg" alt="" ></picture>
-			<picture><source srcset="assets/images/partners/icon4.svg" type="image/webp"><img class="partners__img" src="assets/images/partners/icon4.svg" alt="" ></picture>
-			<picture><source srcset="assets/images/partners/icon5.svg" type="image/webp"><img class="partners__img" src="assets/images/partners/icon5.svg" alt="" ></picture>
+			<picture><source srcset=" <?php echo IMAGES_DIR;?>partners/icon1.svg" type="image/webp"><img class="partners__img" src=" <?php echo IMAGES_DIR;?>partners/icon1.svg" alt="" ></picture>
+			<picture><source srcset=" <?php echo IMAGES_DIR;?>partners/icon2.svg" type="image/webp"><img class="partners__img" src=" <?php echo IMAGES_DIR;?>partners/icon2.svg" alt="" ></picture>
+			<picture><source srcset=" <?php echo IMAGES_DIR;?>partners/icon3.svg" type="image/webp"><img class="partners__img" src=" <?php echo IMAGES_DIR;?>partners/icon3.svg" alt="" ></picture>
+			<picture><source srcset=" <?php echo IMAGES_DIR;?>partners/icon4.svg" type="image/webp"><img class="partners__img" src=" <?php echo IMAGES_DIR;?>partners/icon4.svg" alt="" ></picture>
+			<picture><source srcset=" <?php echo IMAGES_DIR;?>partners/icon5.svg" type="image/webp"><img class="partners__img" src=" <?php echo IMAGES_DIR;?>partners/icon5.svg" alt="" ></picture>
 		</div>
 	</div>
 </section>
