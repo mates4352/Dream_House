@@ -32,19 +32,7 @@
 
 	</div> <!-- container -->
 </footer> <!-- footer -->
-
-	<!-- js -->
-	<!--js-->
-<script src="./library/jquery-3.6.0.min.js"></script>
-<script src="./library/jquery.magnific-popup.min.js"></script>
-<script src="./library/swiper-bundle.min.js"></script>
-<script src="./library/swiper.js"></script>
-<script src="./js/app.js"></script>
-
-
-
-<!--js-->
-
+<?php wp_footer();?>
 </body>
 
 </html>
