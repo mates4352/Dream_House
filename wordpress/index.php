@@ -21,53 +21,15 @@
 
 		<div  class="room__wrapper">
 
-			<a class="roow__column" data-fslightbox="gal" href=" <?php echo IMAGES_DIR;?>room/img1.jpg">
-				<picture><source srcset=" <?php echo IMAGES_DIR;?>room/img1.webp" type="image/webp"><img class="room__img" src=" <?php echo IMAGES_DIR;?>room/img1.jpg" alt=""></picture>
+		<?php foreach(getGallery() as $gallery):?>
+			<a class="roow__column" data-fslightbox="gal" href="<?php echo IMAGES_DIR; ?>/room/img1.jpg">
+				<picture><source srcset="<?php echo $gallery['img']?>" type="image/webp"><img class="room__img" src="<?php echo $gallery['img']?>" alt=""></picture>
 				<svg class="room__icon" viewBox="0 0 15 15">
-					<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
+					<use xlink:href="<?php echo IMAGES_DIR;?>/svg/sprite.svg#Search"></use>
 				</svg>
 				<div class="room__bg"></div>
 			</a>
-
-			<a class="roow__column" data-fslightbox="gal" href=" <?php echo IMAGES_DIR;?>room/img3.jpg">
-				<picture><source srcset=" <?php echo IMAGES_DIR;?>room/img3.webp" type="image/webp"><img class="room__img" src=" <?php echo IMAGES_DIR;?>room/img3.jpg" alt=""></picture>
-				<svg class="room__icon" viewBox="0 0 15 15">
-					<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
-				</svg>
-				<div class="room__bg"></div>
-			</a>
-
-			<a class="roow__column" data-fslightbox="gal" href=" <?php echo IMAGES_DIR;?>room/img5.jpg">
-				<picture><source srcset=" <?php echo IMAGES_DIR;?>room/img5.webp" type="image/webp"><img class="room__img" src=" <?php echo IMAGES_DIR;?>room/img5.jpg" alt=""></picture>
-				<svg class="room__icon" viewBox="0 0 15 15">
-					<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
-				</svg>
-				<div class="room__bg"></div>
-			</a>
-
-			<a class="roow__column" data-fslightbox="gal" href=" <?php echo IMAGES_DIR;?>room/img6.jpg">
-				<picture><source srcset=" <?php echo IMAGES_DIR;?>room/img6.webp" type="image/webp"><img class="room__img" src=" <?php echo IMAGES_DIR;?>room/img6.jpg" alt=""></picture>
-				<svg class="room__icon" viewBox="0 0 15 15">
-					<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
-				</svg>
-				<div class="room__bg"></div>
-			</a>
-
-			<a class="roow__column" data-fslightbox="gal" href=" <?php echo IMAGES_DIR;?>room/img1.jpg">
-				<picture><source srcset=" <?php echo IMAGES_DIR;?>room/img1.webp" type="image/webp"><img class="room__img" src=" <?php echo IMAGES_DIR;?>room/img1.jpg" alt=""></picture>
-				<svg class="room__icon" viewBox="0 0 15 15">
-					<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
-				</svg>
-				<div class="room__bg"></div>
-			</a>
-
-			<a class="roow__column" data-fslightbox="gal" href=" <?php echo IMAGES_DIR;?>room/img3.jpg">
-				<picture><source srcset=" <?php echo IMAGES_DIR;?>room/img3.webp" type="image/webp"><img class="room__img" src=" <?php echo IMAGES_DIR;?>room/img3.jpg" alt=""></picture>
-				<svg class="room__icon" viewBox="0 0 15 15">
-					<use xlink:href=" <?php echo IMAGES_DIR;?>svg/sprite.svg#Search"></use>
-				</svg>
-				<div class="room__bg"></div>
-			</a>
+		<?php endforeach;?>
 		</div>
 
 	</div>
