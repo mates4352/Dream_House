@@ -21,15 +21,16 @@
 
 		<div  class="room__wrapper">
 
-		<?php foreach(getGallery() as $gallery):?>
-			<a class="roow__column" data-fslightbox="gal" href="<?php echo IMAGES_DIR; ?>/room/img1.jpg">
-				<picture><source srcset="<?php echo $gallery['img']?>" type="image/webp"><img class="room__img" src="<?php echo $gallery['img']?>" alt=""></picture>
-				<svg class="room__icon" viewBox="0 0 15 15">
-					<use xlink:href="<?php echo IMAGES_DIR;?>/svg/sprite.svg#Search"></use>
-				</svg>
-				<div class="room__bg"></div>
-			</a>
-		<?php endforeach;?>
+			<?php foreach(getGallery() as $gallery):?>
+				<a class="roow__column" data-fslightbox="gal" href="<?php echo IMAGES_DIR; ?>/room/img1.jpg">
+					<picture><source srcset="<?php echo $gallery['img']?>" type="image/webp"><img class="room__img" src="<?php echo $gallery['img']?>" alt=""></picture>
+					<svg class="room__icon" viewBox="0 0 15 15">
+						<use xlink:href="<?php echo IMAGES_DIR;?>/svg/sprite.svg#Search"></use>
+					</svg>
+					<div class="room__bg"></div>
+				</a>
+			<?php endforeach;?>
+
 		</div>
 
 	</div>
